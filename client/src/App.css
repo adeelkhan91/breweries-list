@@ -1,0 +1,696 @@
+.background {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #769b54;
+}
+
+/* ------------- LOGIN AND REGISTER ------------- */
+
+.wrapperContainer {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("./images/beer.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#loginContainer {
+  max-width: 700px;
+}
+
+.loginForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.loginButton {
+  background-color: #769b54;
+  border: none;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+}
+
+.loginButton:hover,
+.loginButton:active,
+.loginButton:focus,
+.loginButton:visited {
+  background-color: #769b54 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.loginCard {
+  margin-top: 5vh;
+  border-radius: 2px;
+}
+
+.cardHeader {
+  border: none;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.cardHeader img {
+  max-height: 20vh;
+}
+
+.cardFooter {
+  text-align: center;
+  background-color: #21694d;
+}
+
+.red-text {
+  color: red;
+}
+
+.noAccount {
+  margin: 0;
+  padding: 0.5vh;
+  color: white;
+}
+
+.registerLink {
+  color: rgb(252, 178, 62);
+}
+
+.registerLink:hover {
+  text-decoration: none;
+  color: rgb(247, 150, 33);
+}
+
+.createAccount {
+  text-align: center;
+}
+
+/* -------------- NAVBAR -------------- */
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  /* background-color: rgb(13, 70, 93, 0.9) !important; */
+  background-color: #fff !important;
+  -webkit-box-shadow: 0px 1px 3px 0.5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 3px 0.5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 3px 0.5px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  padding: 0;
+  margin-right: 4vw;
+  height: 70px;
+}
+
+.logOut {
+  background-color: #21694d;
+  transition: 300ms;
+  color: white !important;
+  border: solid #21694d !important;
+  border-radius: 5px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 0 !important;
+}
+
+.logOut:hover,
+.logOut:active,
+.logOut:focus {
+  background-color: #21694d !important;
+  border-color: #21694d !important;
+  color: white !important;
+}
+
+.leftLink {
+  color: #21694d !important;
+  margin-right: 5px;
+  margin-bottom: -10px;
+}
+
+.leftLink:hover {
+  color: #21694d !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #21694d !important;
+  border-radius: 2px;
+}
+
+.navbar-light .navbar-toggler:hover {
+  border-color: #21694d !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(13, 70, 93)' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(23, 122, 162)' stroke-width='1.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ----------- DASHBOARD ------------ */
+
+.jumbotron {
+  margin-top: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  max-width: 860px;
+  background-color: #fbfefe;
+  border: solid 1px #21694d;
+  border-radius: 5px;
+}
+
+.logoMin {
+  max-height: 20vh;
+  margin-top: 3vh;
+  margin-bottom: 4vh;
+}
+
+.dashSearch {
+  padding: 8px 8px 8px 8px;
+  color: white;
+  background-color: #21694d;
+  border: solid #21694d;
+  border-radius: 5px;
+  font-weight: 400;
+  transition: 300ms;
+}
+
+.dashSearch:hover,
+.dashSearch:active,
+.dashSearch:focus {
+  background-color: #21694d !important;
+  border-color: #21694d !important;
+  text-decoration: none !important;
+}
+
+.text-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ------------ SEARCH ---------- */
+
+.searchContainer {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.searchCard {
+  max-width: 720px;
+  margin-top: 8vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.searchCard.card {
+  border: solid 1px #21694d;
+  border-radius: 4px;
+}
+
+.searchCard .card-header {
+  background-color: #fbfefe;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+}
+
+.brewSearchTitleDiv {
+  padding-top: 15px;
+}
+.brewSearchTitle {
+  margin-bottom: 10px;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #21694d;
+}
+
+.searchCard .card-body {
+  background-color: #fbfefe;
+  padding-top: 20px;
+}
+
+.brewSearch {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.brewSearchButton {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 8px 8px 8px 8px;
+  background-color: #21694d;
+  color: white !important;
+  border: solid #21694d !important;
+  border-radius: 5px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.brewSearchButton:hover,
+.brewSearchButton:active,
+.brewSearchButton:focus {
+  background-color: #21694d !important;
+  border-color: #21694d !important;
+}
+
+.searchCard .card-footer {
+  background-color: #21694d;
+  color: white;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.lastSearched {
+  text-transform: capitalize;
+}
+
+.lastSearchedCity {
+  color: rgb(252, 178, 62);
+}
+
+/* ----------- RESULTS ------------- */
+
+.searchResultsContainer {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.searchResultsCard {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.searchResultsTitle {
+  color: #21694d;
+  margin-top: 4vh;
+  padding-left: 10px;
+}
+
+.searchResultsTitle h1 {
+  font-weight: 400;
+}
+
+.resultsLine {
+  border: 0.5px solid #fbfefe;
+  margin-bottom: 20px;
+}
+
+.searchResultsCard .card {
+  border: solid 1px #21694d;
+  border-radius: 5px;
+}
+
+.searchResultsCard .card-header {
+  background-color: #fbfefe;
+  border: none;
+}
+
+.searchResultsCard .card-header .brewCardTitle {
+  margin-bottom: 10px;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #21694d;
+}
+
+.searchResultsCard button.btn.btn-primary,
+.searchResultsCard button.btn.btn-active,
+.searchResultsCard button.btn.btn.focus,
+.searchResultsCard button.btn.btn:focus {
+  background: transparent;
+  padding: 0px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border: none;
+  box-shadow: none !important;
+}
+
+.searchResultsCard .fa-chevron-down,
+.searchResultsCard .fa-chevron-up {
+  font-size: 1.5em;
+  color: #21694d;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.searchResultsCard .fa-chevron-down:hover,
+.searchResultsCard .fa-chevron-up:hover {
+  color: #21694d;
+}
+
+.searchResultsCard .card-body {
+  background-color: #fbfefe;
+  padding-top: 5px;
+}
+
+.searchResultsCard .card-body h6 {
+  padding: 0px 5px 0px 0px;
+}
+
+.breweryType {
+  text-transform: capitalize;
+}
+
+/* ------- Checkbox ------- */
+.searchResultsCard .input-group-text {
+  padding: 0;
+  margin-right: 10px;
+  border: none;
+  background: none;
+}
+
+.searchResultsCard .card-footer {
+  background-color: #21694d;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* ----------- MAP ----------- */
+
+/* .mapBox {
+    max-width: 50vw;
+    padding: 0 !important;
+    margin: 0 auto;
+} */
+
+/* .mapboxDiv {
+    max-width: 50vw;
+    max-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+} */
+
+.mapboxWrapper {
+  max-width: 75vw;
+  max-height: 50vh;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px #21694d;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.mapMarkerStyle {
+  color: rgb(13, 70, 93);
+  font-weight: 500;
+  margin: 0;
+}
+.marker {
+  color: #bf7138;
+  font-size: 1.5em;
+}
+
+.brewList {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.mapBreweryCard {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.mapBreweryCard .card {
+  border: solid#21694d;
+  border-radius: 5px;
+}
+
+.mapBreweryCard .card-header {
+  background-color: #fbfefe;
+  border: none;
+}
+
+.mapBreweryCard .card-header .brewCardTitle {
+  margin-bottom: 10px;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #21694d;
+  cursor: pointer;
+}
+
+.mapBreweryCard .card-header .brewCardTitle:hover {
+  color: #21694d;
+}
+
+.mapBreweryCard button.btn.btn-primary,
+.mapBreweryCard button.btn.btn-active,
+.mapBreweryCard button.btn.btn.focus,
+.mapBreweryCard button.btn.btn:focus {
+  background: transparent;
+  padding: 0px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border: none;
+  box-shadow: none !important;
+}
+
+.mapBreweryCard .fa-chevron-down,
+.mapBreweryCard .fa-chevron-up {
+  font-size: 1.5em;
+  color: #21694d;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.mapBreweryCard .fa-chevron-down:hover,
+.mapBreweryCard .fa-chevron-up:hover {
+  color: #21694d;
+}
+
+.mapBreweryCard .card-body {
+  background-color: #fbfefe;
+  padding-top: 5px;
+}
+
+.mapBreweryCard .card-body h6 {
+  padding: 0px 5px 0px 0px;
+}
+
+/* ------- Checkbox ------- */
+.mapBreweryCard .input-group-text {
+  padding: 0;
+  margin-right: 10px;
+  border: none;
+  background: none;
+}
+
+.mapBreweryCard .card-footer {
+  background-color: #21694d;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#mapPageButton {
+  margin-left: 10px;
+  margin-bottom: 3vh;
+  margin-top: 10px;
+  padding: 8px 5px 8px 5px;
+  background-color: #21694d;
+  color: white !important;
+  border: solid #21694d !important;
+  border-radius: 5px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+#mapPageButton:hover,
+#mapPageButton:active,
+#mapPageButton:focus {
+  background-color: #21694d;
+  border-color: #21694d !important;
+}
+
+#mapPageButton .fa-chevron-down,
+#mapPageButton .fa-chevron-up {
+  margin-right: 4px;
+}
+
+.popupName {
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.closePopupButton {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0;
+  font-size: 12px;
+
+  line-height: 10px;
+  border-radius: 5%;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+/* -------------- SAVED ---------------------- */
+
+.savedCardTitle {
+  margin-bottom: 10px;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #21694d;
+}
+
+.searchResultsCard .fa-trash-alt {
+  margin-right: 10px;
+  display: block;
+}
+
+.searchResultsCard .fa-trash-alt:hover {
+  color: #ff3300;
+  cursor: pointer;
+}
+
+/* ------------- SMALL SCREEN -------------- */
+
+@media screen and (max-width: 500px) {
+  .searchResultsTitle {
+    color: #21694d;
+    margin-top: 4vh;
+    text-align: center;
+  }
+
+  .searchCard {
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logoMin {
+    max-height: 15vh;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: smaller;
+  }
+
+  .searchResultsTitle h1 {
+    font-size: 1.5rem;
+  }
+  #loginContainer {
+    max-width: 90vw;
+  }
+
+  .savedCardTitle,
+  .mapBreweryCard .card .brewCardTitle,
+  .searchResultsCard .card .brewCardTitle {
+    font-size: smaller !important;
+  }
+
+  .searchResultsCard .fa-chevron-down,
+  .mapBreweryCard .fa-chevron-down,
+  .searchResultsCard .fa-chevron-up,
+  .mapBreweryCard .fa-chevron-up {
+    font-size: 1em;
+  }
+
+  .mapCardFooterText {
+    font-size: smaller;
+  }
+  .dashSearch {
+    display: block;
+    max-width: 20vw;
+    padding: 5px, 0, 5px, 0;
+    margin-top: 2vh;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    margin-left: auto;
+  }
+
+  .brewSearchTitle {
+    font-size: smaller;
+    font-weight: 300;
+  }
+
+  .brewSearchButton .form-label {
+    font-weight: 200;
+    font-size: smaller;
+  }
+
+  .brewSearch .form-control {
+    margin-bottom: -10px;
+  }
+
+  .mapBreweryCard {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .mapButtonDiv {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+  }
+
+  #mapPageButton {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .mapBreweryCard {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .logOut {
+    border: none !important;
+    color: rgb(13, 70, 93) !important;
+    background: transparent !important;
+    padding-top: 5px !important;
+  }
+
+  .logOut:hover {
+    color: #21694d !important;
+    background: transparent !important;
+  }
+
+  .mapboxWrapper {
+    max-width: 80vw;
+    max-height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  .mapBreweryCard {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* #mapPageButton {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+     */
+}
